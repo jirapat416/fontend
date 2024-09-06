@@ -1,95 +1,113 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from './component/navbar.js';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <Navbar />
+      <div className="container">
+        <div
+          id="carouselExample"
+          className="carousel slide p-5"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img
+                src="/img/carousel1.jpg"
+                className="d-block w-100"
+                alt="Slide 1"
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="/img/carousel2.jpg"
+                className="d-block w-100"
+                alt="Slide 2"
+              />
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div className="row">
+    <div className="col-md-4 mb-4">
+      <div className="card" style={{ width: "100%" }}>
+        <img src="/img/BBGUNZONE_Ares_Kriss_vector_tan.jpg" className="card-img-top" alt="Card image cap" />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick your need</p>
+          <a href="#" className="btn btn-primary">Go to my room</a>
         </div>
       </div>
+    </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    <div className="col-md-4 mb-4">
+      <div className="card" style={{ width: "100%" }}>
+        <img src="/img/94uhf9.jpg" className="card-img-top" alt="Card image cap" />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick your need</p>
+          <a href="#" className="btn btn-primary">Go to my room</a>
+        </div>
       </div>
+    </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    <div className="col-md-4 mb-4">
+      <div className="card" style={{ width: "100%" }}>
+        <img src="/img/vbdh1u.jpg" className="card-img-top" alt="Card image cap" />
+        <div className="card-body">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick your need</p>
+          <a href="#" className="btn btn-primary">Go to my room</a>
+        </div>
       </div>
-    </main>
+    </div>
+  </div>
+  <footer className="py-3 my-4">
+  <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+    <li className="nav-item">
+      <a href="#" className="nav-link px-2 text-body-secondary">Home</a>
+    </li>
+    <li className="nav-item">
+      <a href="#" className="nav-link px-2 text-body-secondary">Features</a>
+    </li>
+    <li className="nav-item">
+      <a href="#" className="nav-link px-2 text-body-secondary">Pricing</a>
+    </li>
+    <li className="nav-item">
+      <a href="#" className="nav-link px-2 text-body-secondary">FAQs</a>
+    </li>
+    <li className="nav-item">
+      <a href="#" className="nav-link px-2 text-body-secondary">About</a>
+    </li>
+  </ul>
+  <p className="text-center text-body-secondary">© 2024 Company, Inc</p>
+</footer>
+
+      </div>
+    </>
   );
 }
