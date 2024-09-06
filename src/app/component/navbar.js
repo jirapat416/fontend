@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom p-3 text-bg-dark">
       <div className="col-md-3 mb-2 mb-md-0 d-flex align-items-center">
         <a
-          href="/page.js"
+          href="/"
           className="d-inline-flex align-items-center link-body-emphasis text-decoration-none"
         >
           <svg
@@ -27,37 +27,37 @@ export default function Navbar() {
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
         <li>
-          <a href="#" className="nav-link icon-link px-2 link-warning">
+          <a href="/" className="nav-link icon-link px-2 link-warning">
             Home
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link px-2 text-secondary">
-            Features
+          <a href="/service" className="nav-link px-2 text-secondary">
+          Service
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link px-2 text-secondary">
-            Pricing
+          <a href="/users" className="nav-link px-2 text-secondary">
+          users
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link px-2 text-secondary">
-            FAQs
+          <a href="/contact" className="nav-link px-2 text-secondary">
+          Contact
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link px-2 text-secondary">
+          <a href="/about" className="nav-link px-2 text-secondary">
             About
           </a>
         </li>
       </ul>
 
       <div className="col-md-3 text-end">
-        <button type="button" className="btn btn-outline-warning me-2">
+        <button href="/login" type="button" className="btn btn-outline-warning me-2">
           Login
         </button>
-        <button type="button" className="btn btn-warning">
+        <button href="/signup" type="button" className="btn btn-warning">
           Sign-up
         </button>
       </div>
